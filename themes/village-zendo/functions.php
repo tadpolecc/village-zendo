@@ -3,7 +3,7 @@
 include_once( get_template_directory() . '/lib/init.php' );
 
 // Theme
-define( 'CHILD_THEME_NAME', 'Tadpole Starter Theme' );
+define( 'CHILD_THEME_NAME', 'Village Zendo' );
 define( 'CHILD_THEME_URL', 'https://tadpole.cc/' );
 define( 'CHILD_THEME_VERSION', '1.0' );
 
