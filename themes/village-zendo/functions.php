@@ -16,8 +16,58 @@ function tc_scripts() {
 // HTML5 markup structure
 add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
 
+// Force sidebar-content-sidebar layout setting
+add_filter( 'genesis_site_layout', '__genesis_return_sidebar_content_sidebar' );
+
+// Unregister layout settings
+genesis_unregister_layout( 'sidebar-content' );
+genesis_unregister_layout( 'content-sidebar' );
+genesis_unregister_layout( 'content-sidebar-sidebar' );
+genesis_unregister_layout( 'sidebar-sidebar-content' );
+genesis_unregister_layout( 'full-width-content' );
+
+// Unregister and remove markup for sidebar-primary
+unregister_sidebar( 'sidebar' );
+remove_action( 'genesis_after_content', 'genesis_get_sidebar' );
+
+// Add support for structural wraps
+add_theme_support( 'genesis-structural-wraps', array( 'nav', 'subnav', 'site-inner' ) );
+
+//Remove the header from normal location
+remove_action( 'genesis_header', 'genesis_header_markup_open', 5 );
+remove_action( 'genesis_header', 'genesis_do_header' );
+remove_action( 'genesis_header', 'genesis_header_markup_close', 15 );
+
+// Move header into into content-sidebar-wrap
+add_action( 'genesis_before_content', 'genesis_header_markup_open', 5 );
+add_action( 'genesis_before_content', 'genesis_do_header' );
+add_action( 'genesis_before_content', 'genesis_header_markup_close', 15 );
+
+//Remove the footer from normal location
+remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
+
+// Move footer into content-sidebar-wrap
+add_action( 'genesis_after_content', 'genesis_footer_markup_open', 5 );
+add_action( 'genesis_after_content', 'genesis_do_footer' );
+add_action( 'genesis_after_content', 'genesis_footer_markup_close', 15 );
+
+// Move footer widget into content-sidebar-wrap above new footer
+remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas' );
+add_action( 'genesis_after_content', 'genesis_footer_widget_areas', 4 );
+
+
+
+
 // Viewport meta tag for mobile browsers
 add_theme_support( 'genesis-responsive-viewport' );
+
+// Unregister primary/secondary navigation menus
+remove_theme_support( 'genesis-menus' );
+
+// Widgets
+unregister_sidebar( 'header-right' );
 
 // Footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );

@@ -1,7 +1,7 @@
 /* 
 Theme Name: Village Zendo
 Theme URI: https://tadpole.cc/
-Description: What Tadpole uses to start most projects.
+Description: Custom built for Village Zendo.
 Author: Tadpole Collective
 Author URI: https://tadpole.cc/  
 Template: genesis
@@ -468,15 +468,19 @@ th {
 /* ## Site Containers
 --------------------------------------------- */
 
-.site-inner,
-.wrap {
+.site-container {
 	margin: 0 auto;
 	max-width: 1200px;
 }
 
+.site-inner,
+.wrap {
+	margin: 0 auto 0 0; /* flush left layout */
+	width: 100%;
+}
+
 .site-inner {
 	clear: both;
-	padding-top: 40px;
 }
 
 /* ## Column Widths and Positions
@@ -484,65 +488,33 @@ th {
 
 /* ### Wrapping div for .content and .sidebar-primary */
 
-.content-sidebar-sidebar .content-sidebar-wrap,
-.sidebar-content-sidebar .content-sidebar-wrap,
-.sidebar-sidebar-content .content-sidebar-wrap {
-	width: 980px;
-}
-
-.content-sidebar-sidebar .content-sidebar-wrap {
-	float: left;
-}
-
-.sidebar-content-sidebar .content-sidebar-wrap,
-.sidebar-sidebar-content .content-sidebar-wrap {
+.content-sidebar-wrap {
+	background-color: #fff;
 	float: right;
+	width: 80%;
 }
 
 /* ### Content */
 
 .content {
-	float: right;
-	width: 800px;
-}
-
-.content-sidebar .content,
-.content-sidebar-sidebar .content,
-.sidebar-content-sidebar .content {
-	float: left;
-}
-
-.content-sidebar-sidebar .content,
-.sidebar-content-sidebar .content,
-.sidebar-sidebar-content .content {
-	width: 580px;
-}
-
-.full-width-content .content {
 	width: 100%;
 }
 
 /* ### Primary Sidebar */
 
 .sidebar-primary {
-	float: right;
-	width: 360px;
-}
-
-.sidebar-content .sidebar-primary,
-.sidebar-sidebar-content .sidebar-primary {
-	float: left;
+	width: 0;
 }
 
 /* ### Secondary Sidebar */
 
 .sidebar-secondary {
+	background: #773a25;
+	color: #fff;
 	float: left;
-	width: 180px;
-}
-
-.content-sidebar-sidebar .sidebar-secondary {
-	float: right;
+	margin: 0;
+	padding: 0;
+	width: 20%;
 }
 
 /* ## Column Classes
@@ -872,12 +844,11 @@ img.alignright,
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	background-color: #fff;
-	min-height: 160px;
-}
-
-.site-header .wrap {
+	margin: 0;
+	overflow: hidden;
 	padding: 40px 0;
+	padding: 4rem 0;
+	width: 100%;
 }
 
 /* ## Title Area
@@ -885,8 +856,9 @@ img.alignright,
 
 .title-area {
 	float: left;
-	padding: 10px 0;
-	width: 360px;
+	padding: 16px 40px;
+	padding: 1.6rem 4rem;
+	width: 320px;
 }
 
 .header-full-width .title-area {
@@ -935,7 +907,7 @@ img.alignright,
 .site-header .widget-area {
 	float: right;
 	text-align: right;
-	width: 800px;
+	width: 320px;
 }
 
 
@@ -1260,7 +1232,6 @@ li.comment {
 }
 
 .sidebar .widget {
-	background-color: #fff;
 	margin-bottom: 40px;
 	padding: 40px;
 }
@@ -1306,7 +1277,7 @@ li.comment {
 .footer-widgets-1,
 .footer-widgets-2,
 .footer-widgets-3 {
-	width: 340px;
+	width: 193px;
 }
 
 .footer-widgets-1 {
