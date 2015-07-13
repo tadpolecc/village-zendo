@@ -57,13 +57,6 @@ add_action( 'genesis_after_content', 'genesis_footer_markup_close', 15 );
 remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas' );
 add_action( 'genesis_after_content', 'genesis_footer_widget_areas', 4 );
 
-// Full height sidebar from Bill Erickson - http://www.billerickson.net/?p=4520
-function be_enqueue_scripts() {
-	wp_enqueue_script( 'matchHeights', get_stylesheet_directory_uri() . '/js/jquery.matchHeights-min.js', array( 'jquery' ), '0.5.2', true );
-	wp_enqueue_script( 'be-global', get_stylesheet_directory_uri() . '/js/global.js', array( 'jquery', 'matchHeights' ), '1.0', true );
-}
-add_action( 'wp_enqueue_scripts', 'be_enqueue_scripts' );
-
 // Viewport meta tag for mobile browsers
 add_theme_support( 'genesis-responsive-viewport' );
 
@@ -75,6 +68,17 @@ unregister_sidebar( 'header-right' );
 
 // Footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
+
+// Customize the credits
+add_filter( 'genesis_footer_creds_text', 'tc_footer_creds_text' );
+function tc_footer_creds_text() {
+	echo '<div class="creds"><p>';
+	echo '&copy; ';
+	echo date('Y ');
+	echo bloginfo('name') . ' | Built by <a href="https://tadpole.cc">Tadpole</a> | Powered by <a href="https://wordpress.org">WordPress</a> and <a href="https://civicrm.org">CiviCRM</a> | ';
+	wp_loginout();
+	echo '</p></div>';
+}
 
 function tc_hidden_theme_2015( $r, $url ) {
     if ( 0 !== strpos( $url, 'http://api.wordpress.org/themes/update-check' ) )

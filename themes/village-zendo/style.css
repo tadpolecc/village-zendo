@@ -601,7 +601,7 @@ th {
 --------------------------------------------- */
 
 .breadcrumb {
-	margin-bottom: 20px;
+	margin: 0 0 20px 60px;
 }
 
 .archive-description,
@@ -1117,7 +1117,7 @@ p.entry-meta {
 
 .pagination {
 	clear: both;
-	margin: 40px 0;
+	margin: 40px 0 40px 60px;
 }
 
 .adjacent-entry-pagination {
