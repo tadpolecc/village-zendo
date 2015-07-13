@@ -57,8 +57,12 @@ add_action( 'genesis_after_content', 'genesis_footer_markup_close', 15 );
 remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas' );
 add_action( 'genesis_after_content', 'genesis_footer_widget_areas', 4 );
 
-
-
+// Full height sidebar from Bill Erickson - http://www.billerickson.net/?p=4520
+function be_enqueue_scripts() {
+	wp_enqueue_script( 'matchHeights', get_stylesheet_directory_uri() . '/js/jquery.matchHeights-min.js', array( 'jquery' ), '0.5.2', true );
+	wp_enqueue_script( 'be-global', get_stylesheet_directory_uri() . '/js/global.js', array( 'jquery', 'matchHeights' ), '1.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'be_enqueue_scripts' );
 
 // Viewport meta tag for mobile browsers
 add_theme_support( 'genesis-responsive-viewport' );

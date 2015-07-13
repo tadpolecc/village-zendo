@@ -475,6 +475,7 @@ th {
 
 .site-inner,
 .wrap {
+	background-color: #773a25;
 	margin: 0 auto 0 0; /* flush left layout */
 	width: 100%;
 }
@@ -509,7 +510,6 @@ th {
 /* ### Secondary Sidebar */
 
 .sidebar-secondary {
-	background: #773a25;
 	color: #fff;
 	float: left;
 	margin: 0;
@@ -1234,6 +1234,14 @@ li.comment {
 .sidebar .widget {
 	margin-bottom: 40px;
 	padding: 40px;
+}
+
+.sidebar a {
+	color: #fff;
+}
+
+.sidebar a:hover {
+	color: #c8c8c8;
 }
 
 
