@@ -33,6 +33,12 @@ remove_action( 'genesis_after_content', 'genesis_get_sidebar' );
 // Add support for structural wraps
 add_theme_support( 'genesis-structural-wraps', array( 'nav', 'subnav', 'site-inner' ) );
 
+// Custom Header
+add_theme_support( 'custom-header', array(
+	'width' => '960',
+	'height' => '180')
+);
+
 //Remove the header from normal location
 remove_action( 'genesis_header', 'genesis_header_markup_open', 5 );
 remove_action( 'genesis_header', 'genesis_do_header' );

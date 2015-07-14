@@ -914,30 +914,23 @@ img.alignright,
 /* # Site Navigation
 ---------------------------------------------------------------------------------------------------- */
 
-.genesis-nav-menu {
-	clear: both;
-	font-size: 16px;
-	line-height: 1;
-	width: 100%;
+#menu-main-menu li {
+	border-bottom: none;
+	margin: 0;
+	padding: 0;
 }
 
-.genesis-nav-menu .menu-item {
-	display: inline-block;
-	text-align: left;
+#menu-main-menu li li {
+	margin: 0 0 0 140px;
 }
 
-.genesis-nav-menu a {
-	display: block;
-	padding: 18px 24px;
+#menu-main-menu a:hover,
+#menu-main-menu .current-menu-item > a,
+#menu-main-menu .sub-menu .current-menu-item > a:hover {
+	background-color: #241f20;
 }
 
-.genesis-nav-menu a:hover,
-.genesis-nav-menu .current-menu-item > a,
-.genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-	color: #808080;
-}
-
-.genesis-nav-menu .sub-menu {
+#menu-main-menu .sub-menu {
 	left: -9999px;
 	opacity: 0;
 	position: absolute;
@@ -946,59 +939,26 @@ img.alignright,
 	-ms-transition:     opacity .4s ease-in-out;
 	-o-transition:      opacity .4s ease-in-out;
 	transition:         opacity .4s ease-in-out;
-	width: 200px;
+	width: 300px;
 	z-index: 99;
 }
 
-.genesis-nav-menu .sub-menu a {
-	background-color: #fff;
-	border: 1px solid #eee;
-	border-top: none;
-	font-size: 14px;
-	padding: 20px;
+#menu-main-menu .sub-menu a {
 	position: relative;
 	width: 200px;
 }
 
-.genesis-nav-menu .sub-menu .sub-menu {
+#menu-main-menu .sub-menu .sub-menu {
 	margin: -55px 0 0 199px;
 }
 
-.genesis-nav-menu .menu-item:hover {
+#menu-main-menu .menu-item:hover {
 	position: static;
 }
 
-.genesis-nav-menu .menu-item:hover > .sub-menu {
+#menu-main-menu .menu-item:hover > .sub-menu {
 	left: auto;
 	opacity: 1;
-}
-
-.genesis-nav-menu > .first > a {
-	padding-left: 0;
-}
-
-.genesis-nav-menu > .last > a {
-	padding-right: 0;
-}
-
-.genesis-nav-menu > .right {
-	color: #fff;
-	float: right;
-	list-style-type: none;
-	padding: 30px 0;
-}
-
-.genesis-nav-menu > .right > a {
-	display: inline;
-	padding: 0;
-}
-
-.genesis-nav-menu > .rss > a {
-	margin-left: 48px;
-}
-
-.genesis-nav-menu > .search {
-	padding: 10px 0 0;
 }
 
 /* ## Site Header Navigation
