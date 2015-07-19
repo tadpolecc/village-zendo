@@ -71,6 +71,17 @@ remove_theme_support( 'genesis-menus' );
 
 // Widgets
 unregister_sidebar( 'header-right' );
+register_sidebar ( array(
+	'name'          => 'Call to Action',
+	'id'            => 'main-cta',
+	'description'   => '',
+    'class'         => '',
+	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	'after_widget'  => '</aside>',
+	'before_title'  => '<h2 class="widgettitle">',
+	'after_title'   => '</h2>'
+	)
+);
 
 // Footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
