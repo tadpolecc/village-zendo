@@ -920,8 +920,17 @@ img.alignright,
 	padding: 0;
 }
 
-#menu-main-menu li li {
-	margin: 0 0 0 140px;
+#menu-main-menu li .sub-menu li {
+	
+}
+
+#menu-main-menu li .sub-menu li .sub-menu li {
+	margin: 0;
+}
+
+#menu-main-menu li li a {
+	background: #773a25;
+	width: auto;
 }
 
 #menu-main-menu a:hover,
@@ -933,23 +942,24 @@ img.alignright,
 #menu-main-menu .sub-menu {
 	left: -9999px;
 	opacity: 0;
+	margin: -35px 0 0 0;
 	position: absolute;
-	-webkit-transition: opacity .4s ease-in-out;
-	-moz-transition:    opacity .4s ease-in-out;
-	-ms-transition:     opacity .4s ease-in-out;
-	-o-transition:      opacity .4s ease-in-out;
-	transition:         opacity .4s ease-in-out;
+	-webkit-transition: opacity .6s ease-in-out;
+	-moz-transition:    opacity .6s ease-in-out;
+	-ms-transition:     opacity .6s ease-in-out;
+	-o-transition:      opacity .6s ease-in-out;
+	transition:         opacity .6s ease-in-out;
 	width: 300px;
 	z-index: 99;
 }
 
 #menu-main-menu .sub-menu a {
 	position: relative;
-	width: 200px;
+	width: 230px;
 }
 
 #menu-main-menu .sub-menu .sub-menu {
-	margin: -55px 0 0 199px;
+	margin: -33px 0 0 167px;
 }
 
 #menu-main-menu .menu-item:hover {
@@ -957,7 +967,7 @@ img.alignright,
 }
 
 #menu-main-menu .menu-item:hover > .sub-menu {
-	left: auto;
+	left: 21%;
 	opacity: 1;
 }
 
@@ -1178,10 +1188,10 @@ li.comment {
 
 .sidebar {
 	font-size: 16px;
+	padding-top: 160px;
 }
 
 .sidebar li {
-	border-bottom: 1px dotted #ddd;
 	margin-bottom: 10px;
 	padding-bottom: 10px;
 }
@@ -1193,7 +1203,7 @@ li.comment {
 
 .sidebar .widget {
 	margin-bottom: 40px;
-	padding: 40px;
+	padding: 40px 30px;
 }
 
 .sidebar a {
@@ -1204,6 +1214,32 @@ li.comment {
 	color: #c8c8c8;
 }
 
+.sidebar ul.menu li.menu-item a {
+	display: block;
+	font-size: 20px;
+	font-weight: 700;
+	padding: 0 8px;
+	text-decoration: none;
+	width: 100%;
+}
+
+.sidebar ul.menu li.menu-item a:hover {
+	background: #241f20;
+	color: #fff;
+}
+
+.sidebar ul.menu li.menu-item a:after,
+.sidebar ul.menu li.menu-item.menu-item-has-children ul.sub-menu li.menu-item a:after,
+.sidebar ul.menu li.menu-item.menu-item-has-children ul.sub-menu li.menu-item.menu-item-has-children ul.sub-menu li.menu-item a:after {
+	content: "\00a0";
+}
+
+.sidebar ul.menu li.menu-item.menu-item-has-children a:after,
+.sidebar ul.menu li.menu-item.menu-item-has-children ul.sub-menu li.menu-item.menu-item-has-children a:after {
+	color: #fff900;
+	content: "\25b6";
+	float: right;
+}
 
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
