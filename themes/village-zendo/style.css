@@ -877,13 +877,6 @@ img.alignright,
 	text-decoration: none;
 }
 
-.header-image .site-title > a {
-	background: url(images/logo.png) no-repeat left;
-	float: left;
-	min-height: 60px;
-	width: 100%;
-}
-
 .site-description {
 	font-size: 16px;
 	font-weight: 300;
@@ -918,10 +911,6 @@ img.alignright,
 	border-bottom: none;
 	margin: 0;
 	padding: 0;
-}
-
-.sidebar .widget_nav_menu li .sub-menu li {
-	
 }
 
 .sidebar .widget_nav_menu li .sub-menu li .sub-menu li {
