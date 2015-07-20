@@ -230,15 +230,15 @@ h6 {
 }
 
 h1 {
-	font-size: 36px;
+	font-size: 26px;
 }
 
 h2 {
-	font-size: 30px;
+	font-size: 24px;
 }
 
 h3 {
-	font-size: 24px;
+	font-size: 22px;
 }
 
 h4 {
@@ -497,7 +497,8 @@ th {
 
 /* ### Content */
 
-.content {
+main.content {
+	padding: 20px 40px;
 	width: 100%;
 }
 
@@ -658,7 +659,7 @@ th {
 }
 
 .entry-title {
-	font-size: 36px;
+	font-size: 26px;
 }
 
 .entry-title a,
@@ -790,6 +791,16 @@ img.alignright,
 	font-size: 20px;
 }
 
+/* ## Front Page
+--------------------------------------------- */
+
+body.home .content .entry {
+	margin-bottom: 0;
+}
+
+body.home article.entry header.entry-header h1.entry-title a {
+	font-size: 18px;
+}
 
 /* # Plugins
 ---------------------------------------------------------------------------------------------------- */
@@ -1013,7 +1024,7 @@ img.alignright,
 
 .entry {
 	margin-bottom: 40px;
-	padding: 50px 60px;
+	padding: 0;
 }
 
 .content .entry {
@@ -1231,7 +1242,7 @@ li.comment {
 }
 
 aside.main-cta {
-	padding: 0 60px;
+	
 }
 
 aside.main-cta .widget {

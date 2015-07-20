@@ -6,6 +6,7 @@
   *
   */
 
+// Call to Action sidebar
 add_action( 'genesis_before_loop', 'tc_main_cta' );
 function tc_main_cta() {
 	if ( is_active_sidebar( 'main-cta' ) ) { ?>
@@ -19,14 +20,18 @@ function tc_main_cta() {
 remove_action( 'genesis_loop', 'genesis_do_loop' );
 add_action( 'genesis_loop', 'tc_home_loop' );
 function tc_home_loop() {
-	global $paged;
     global $query_args; 
     $args = array(
         'category_name' => 'homepage-feature-list', 
-        'paged'         => $paged
-    );
- 
-    genesis_custom_loop( wp_parse_args($query_args, $args) );
+        'posts_per_page' => 3
+    ); 
+    remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+    remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
+    remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
+?>
+ 	
+ 	<h2>Features</h2>
+    <?php genesis_custom_loop( wp_parse_args($query_args, $args) );
  
 }
 
