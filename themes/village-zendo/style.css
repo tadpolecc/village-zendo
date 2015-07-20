@@ -774,6 +774,11 @@ img.alignright,
 	text-align: center;
 }
 
+.sidebar .widget h4.widget-title {
+	color: #fff;
+	font-weight: 700;
+}
+
 /* ## Featured Content
 --------------------------------------------- */
 
