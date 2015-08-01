@@ -86,17 +86,6 @@ register_sidebar ( array(
 // Footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
 
-// Customize the credits
-add_filter( 'genesis_footer_creds_text', 'tc_footer_creds_text' );
-function tc_footer_creds_text() {
-	echo '<div class="creds"><p>';
-	echo '&copy; ';
-	echo date('Y ');
-	echo bloginfo('name') . ' | Built by <a href="https://tadpole.cc">Tadpole</a> | Powered by <a href="https://wordpress.org">WordPress</a> and <a href="https://civicrm.org">CiviCRM</a> | ';
-	wp_loginout();
-	echo '</p></div>';
-}
-
 function tc_hidden_theme_2015( $r, $url ) {
     if ( 0 !== strpos( $url, 'http://api.wordpress.org/themes/update-check' ) )
         return $r; // Not a theme update request. Bail immediately.
