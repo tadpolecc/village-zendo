@@ -679,10 +679,6 @@ main.content {
 	margin-bottom: 20px;
 }
 
-.footer-widgets .widget-title {
-	color: #fff;
-}
-
 /* ## WordPress
 --------------------------------------------- */
 
@@ -831,6 +827,10 @@ body.home ul.eo-events.eo-events-widget li span.upcoming-title a {
 	font-weight: 700;
 	margin-left: 20px;
 	text-decoration: none;
+}
+
+body.home ul.eo-events.eo-events-widget li span.upcoming-title a:hover {
+	text-decoration: underline;
 }
 
 
@@ -1317,47 +1317,23 @@ aside.main-cta .widget {
 ---------------------------------------------------------------------------------------------------- */
 
 .footer-widgets {
-	background-color: #333;
 	clear: both;
-	padding-top: 40px;
-}
-
-.footer-widgets,
-.footer-widgets a {
-	color: #999;
 }
 
 .footer-widgets input {
 	border: 1px solid #333;
 }
 
-.footer-widgets a.button,
-.footer-widgets a:hover {
-	color: #fff;
-}
-
-.footer-widgets li {
-	border-bottom: 1px dotted #666;
-	margin-bottom: 10px;
-	padding-bottom: 10px;
-}
-
-.footer-widgets .widget {
-	margin-bottom: 40px;
-}
-
-.footer-widgets p:last-child {
-	margin-bottom: 0;
-}
-
 .footer-widgets-1,
 .footer-widgets-2,
 .footer-widgets-3 {
-	width: 193px;
+	padding: 0 3%;
+	width: 30%;
 }
 
-.footer-widgets-1 {
-	margin-right: 60px;
+.footer-widgets-1,
+.footer-widgets-2 {
+	margin-right: 3%;
 }
 
 .footer-widgets-1,
@@ -1369,6 +1345,17 @@ aside.main-cta .widget {
 	float: right;
 }
 
+.footer-widgets .widget {
+	margin-bottom: 40px;
+}
+
+.footer-widgets p:last-child {
+	margin-bottom: 0;
+}
+
+.footer-widgets .widget .widget-title {
+	margin-bottom: 5px;
+}
 
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
