@@ -36,6 +36,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	- WordPress
 - Widgets
 	- Featured Content
+	- Front Page
+	- Event List
 - Plugins
 	- Genesis eNews Extended
 	- Jetpack
@@ -804,9 +806,33 @@ body.home .content .entry {
 	margin-bottom: 0;
 }
 
-body.home article.entry header.entry-header h1.entry-title a {
-	font-size: 18px;
+body.home article.entry {
+	margin-left: 40px;
 }
+
+body.home article.entry header.entry-header h1.entry-title a {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+/* ## Event List
+--------------------------------------------- */
+
+body.home ul.eo-events.eo-events-widget {
+	margin-left: 40px;
+}
+
+body.home ul.eo-events.eo-events-widget li span.upcoming-date {
+	color: #fe0000;
+}
+
+body.home ul.eo-events.eo-events-widget li span.upcoming-title a {
+	color: #333;
+	font-weight: 700;
+	margin-left: 20px;
+	text-decoration: none;
+}
+
 
 /* # Plugins
 ---------------------------------------------------------------------------------------------------- */

@@ -31,7 +31,7 @@ function tc_home_loop() {
     remove_action( 'genesis_after_endwhile', 'genesis_posts_nav' );
 ?>
  	
- 	<h2>Features</h2>
+ 	<h2>Features:</h2>
     <?php genesis_custom_loop( wp_parse_args($query_args, $args) );
  
 }
