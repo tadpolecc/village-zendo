@@ -83,6 +83,12 @@ register_sidebar ( array(
 	)
 );
 
+// Search bar text
+add_filter( 'genesis_search_text', 'tc_search_text' );
+function tc_search_text( $text ) {
+	return esc_attr( 'search...' );
+}
+
 // Footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
 
