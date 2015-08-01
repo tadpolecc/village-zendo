@@ -22,7 +22,7 @@
 global $eo_event_loop,$eo_event_loop_args;
 
 //Date % Time format for events
-$date_format = get_option('date_format');
+$date_format = 'j F';
 $time_format = get_option('time_format');
 
 //The list ID / classes
