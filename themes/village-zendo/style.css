@@ -39,6 +39,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 - Plugins
 	- Genesis eNews Extended
 	- Jetpack
+	- Soliloquy
 - Site Header
 	- Title Area
 	- Widget Area
@@ -855,6 +856,37 @@ body.home article.entry header.entry-header h1.entry-title a {
 	display: none;
 }
 
+/* ## Soliloquy
+--------------------------------------------- */
+
+.soliloquy-container.home-page-carousel.soliloquy-fc-slider .soliloquy-caption {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: auto;
+	width: 100%;
+}
+
+.soliloquy-container.home-page-carousel .soliloquy-fc-slider .soliloquy-caption-inside {
+
+}
+
+.soliloquy-container.home-page-carousel h2.soliloquy-fc-title {
+	margin-bottom: 0;
+}
+
+.soliloquy-container.home-page-carousel h2.soliloquy-fc-title a.soliloquy-fc-title-link {
+	font-size: 0.7em;
+	margin-bottom: 0;
+}
+
+.soliloquy-container.home-page-carousel .soliloquy-controls .soliloquy-prev {
+	left:  -45px;
+}
+
+.soliloquy-container.home-page-carousel .soliloquy-controls .soliloquy-next {
+	right: -45px;
+}
 
 /* # Site Header
 ---------------------------------------------------------------------------------------------------- */
