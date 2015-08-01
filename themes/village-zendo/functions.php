@@ -89,6 +89,15 @@ function tc_search_text( $text ) {
 	return esc_attr( 'search...' );
 }
 
+// Remove meta for CPTs
+add_action ( 'get_header', 'tc_cpt_remove_post_info_genesis' );
+function tc_cpt_remove_post_info_genesis() {
+	if ( 'post' !== get_post_type() ) {
+		remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+		remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
+	}
+}
+
 // Footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
 
