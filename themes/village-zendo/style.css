@@ -1005,7 +1005,7 @@ body.home ul.eo-events.eo-events-widget li span.upcoming-title a {
 .sidebar .widget_nav_menu .sub-menu {
 	left: -9999px;
 	opacity: 0;
-	margin: -35px 0 0 0;
+	margin: -33px 0 0 0;
 	position: absolute;
 	-webkit-transition: opacity .6s ease-in-out;
 	-moz-transition:    opacity .6s ease-in-out;
@@ -1030,7 +1030,7 @@ body.home ul.eo-events.eo-events-widget li span.upcoming-title a {
 }
 
 .sidebar .widget_nav_menu .menu-item:hover > .sub-menu {
-	left: 21%;
+	left: 94.5%;
 	opacity: 1;
 }
 
@@ -1252,6 +1252,7 @@ li.comment {
 .sidebar {
 	font-size: 16px;
 	padding-top: 160px;
+	position: relative;
 }
 
 .sidebar li {
@@ -1266,7 +1267,7 @@ li.comment {
 
 .sidebar .widget {
 	margin-bottom: 40px;
-	padding: 40px 30px;
+	padding: 40px 5%;
 }
 
 .sidebar a {
