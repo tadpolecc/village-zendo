@@ -917,23 +917,12 @@ body.home ul.eo-events.eo-events-widget li span.upcoming-title a:hover {
 /* # Site Header
 ---------------------------------------------------------------------------------------------------- */
 
-.site-header {
-	margin: 0;
-	overflow: hidden;
-	padding: 40px 0;
-	padding: 4rem 0;
+.vz-header {
 	width: 100%;
 }
 
 /* ## Title Area
 --------------------------------------------- */
-
-.title-area {
-	float: left;
-	padding: 16px 40px;
-	padding: 1.6rem 4rem;
-	width: 320px;
-}
 
 .header-full-width .title-area {
 	width: 100%;
@@ -1379,7 +1368,8 @@ aside.main-cta .widget {
 @media only screen and (max-width: 1200px) {
 
 	.site-inner,
-	.wrap {
+	.wrap,
+	.site-container {
 		max-width: 960px;
 	}
 
