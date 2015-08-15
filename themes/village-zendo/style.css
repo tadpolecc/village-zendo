@@ -501,7 +501,7 @@ th {
 /* ### Content */
 
 main.content {
-	padding: 20px 40px;
+	padding: 10px 40px 20px;
 	width: 100%;
 }
 
@@ -921,11 +921,16 @@ body.home ul.eo-events.eo-events-widget li span.upcoming-title a:hover {
 	width: 100%;
 }
 
+.vz-header a.logo-img {
+	color: transparent;
+	text-decoration: none;
+}
+
 /* ## Title Area
 --------------------------------------------- */
 
-.header-full-width .title-area {
-	width: 100%;
+.title-area {
+	display: none;
 }
 
 .site-title {
@@ -1383,6 +1388,10 @@ aside.main-cta .widget {
 		width: 620px;
 	}
 
+	.sidebar-secondary {
+		padding-top: 120px;
+	}
+
 }
 
 @media only screen and (max-width: 925px) {
@@ -1390,9 +1399,6 @@ aside.main-cta .widget {
 	.content,
 	.content-sidebar-sidebar .content,
 	.content-sidebar-sidebar .content-sidebar-wrap,
-	.footer-widgets-1,
-	.footer-widgets-2,
-	.footer-widgets-3,
 	.sidebar-content-sidebar .content,
 	.sidebar-content-sidebar .content-sidebar-wrap,
 	.sidebar-primary,
@@ -1444,9 +1450,9 @@ aside.main-cta .widget {
 		display: none;
 	}
 
-	.footer-widgets-1 {
+	/*.footer-widgets-1 {
 		margin-right: 0;
-	}
+	}*/
 
 }
 
@@ -1498,3 +1504,17 @@ aside.main-cta .widget {
 	}
 
 }
+
+@media only screen and (max-width: 480px) {
+
+	body.home ul.eo-events.eo-events-widget,
+	body.home article.entry {
+		margin-left: 20px;
+	}
+
+	.footer-widgets-1,
+	.footer-widgets-2,
+	.footer-widgets-3 {
+		float: left;
+		width: 100%;
+	}

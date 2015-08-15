@@ -51,7 +51,7 @@ remove_action( 'genesis_header', 'genesis_header_markup_close', 15 );
 add_action( 'genesis_before_content', 'tc_vz_header' );
 function tc_vz_header() { ?>
 	<div class="vz-header">
-		<a href="<?php bloginfo('url'); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /></a>
+		<a class="logo-img" href="<?php bloginfo('url'); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /></a>
 			<div class="title-area">
 				<h1 class="site-title" itemprop="headline">
 					<?php bloginfo('site_title'); ?>
