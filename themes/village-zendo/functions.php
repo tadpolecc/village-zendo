@@ -47,14 +47,11 @@ remove_action( 'genesis_header', 'genesis_header_markup_open', 5 );
 remove_action( 'genesis_header', 'genesis_do_header' );
 remove_action( 'genesis_header', 'genesis_header_markup_close', 15 );
 
-// Move header into into content-sidebar-wrap
-// add_action( 'genesis_before_content', 'genesis_header_markup_open', 5 );
-// add_action( 'genesis_before_content', 'genesis_do_header' );
-// add_action( 'genesis_before_content', 'genesis_header_markup_close', 15 );
+// Add our own header inside content-sidebar-wrap
 add_action( 'genesis_before_content', 'tc_vz_header' );
 function tc_vz_header() { ?>
 	<div class="vz-header">
-		<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+		<a href="<?php bloginfo('url'); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /></a>
 			<div class="title-area">
 				<h1 class="site-title" itemprop="headline">
 					<?php bloginfo('site_title'); ?>

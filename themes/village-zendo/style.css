@@ -907,11 +907,11 @@ body.home ul.eo-events.eo-events-widget li span.upcoming-title a:hover {
 }
 
 .soliloquy-container.home-page-carousel .soliloquy-controls .soliloquy-prev {
-	left:  -45px;
+	left:  -35px;
 }
 
 .soliloquy-container.home-page-carousel .soliloquy-controls .soliloquy-next {
-	right: -45px;
+	right: -35px;
 }
 
 /* # Site Header
