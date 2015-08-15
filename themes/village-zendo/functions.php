@@ -109,6 +109,22 @@ function tc_cpt_remove_post_info_genesis() {
 	}
 }
 
+// Show event dates directly under all event titles
+function tc_event_date() {
+	if ( function_exists( 'eo_get_the_start' ) ) {
+		echo eo_get_the_start( 'j F' );
+		echo ' - ';
+		echo eo_get_the_end( 'j F' );
+	}
+}
+
+add_action( 'get_header', 'tc_event_dates' );
+function tc_event_dates() {
+	if ( 'event' == get_post_type() ) {
+		add_action( 'genesis_entry_header', 'tc_event_date' );
+	}
+}
+
 // Footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
 
