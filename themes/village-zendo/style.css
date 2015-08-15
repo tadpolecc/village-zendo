@@ -517,7 +517,7 @@ main.content {
 	color: #fff;
 	float: left;
 	margin: 0;
-	padding: 0;
+	padding-top: 160px;
 	width: 20%;
 }
 
@@ -1240,7 +1240,6 @@ li.comment {
 
 .sidebar {
 	font-size: 16px;
-	padding-top: 160px;
 	position: relative;
 }
 
@@ -1353,7 +1352,7 @@ aside.main-cta .widget {
 	background-color: #fff;
 	font-size: 16px;
 	line-height: 1;
-	padding: 40px 0;
+	padding: 40px 3%;
 	text-align: center;
 }
 
@@ -1384,32 +1383,9 @@ aside.main-cta .widget {
 		width: 620px;
 	}
 
-	.sidebar-content-sidebar .content,
-	.sidebar-sidebar-content .content,
-	.content-sidebar-sidebar .content {
-		width: 400px;
-	}
-
-	.footer-widgets-1,
-	.footer-widgets-2,
-	.footer-widgets-3,
-	.sidebar-primary,
-	.title-area {
-		width: 300px;
-	}
-
-	.footer-widgets-1 {
-		margin-right: 30px;
-	}
-
 }
 
-@media only screen and (max-width: 960px) {
-
-	.site-inner,
-	.wrap {
-		max-width: 800px;
-	}
+@media only screen and (max-width: 925px) {
 
 	.content,
 	.content-sidebar-sidebar .content,
@@ -1460,6 +1436,10 @@ aside.main-cta .widget {
 		margin: 16px auto;
 	}
 
+	.sidebar-secondary {
+		padding-top: 40px;
+	}
+
 	.genesis-nav-menu li.right {
 		display: none;
 	}
@@ -1479,8 +1459,8 @@ aside.main-cta .widget {
 
 	.site-inner,
 	.wrap {
-		padding-left: 5%;
-		padding-right: 5%;
+		padding-left: 2%;
+		padding-right: 2%;
 	}
 
 	.archive-description,
