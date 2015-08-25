@@ -56,14 +56,6 @@ CiviCRM CSS
   clear: both;
 }
 
-/*label, 
-.crm-form-checkbox,
-.form-checkbox,
-.crm-form-radio,
-.form-radio {
-  float: left;
-}*/
-
 input.form-checkbox,
 input.form-radio {
   cursor: pointer;
@@ -85,8 +77,6 @@ div#crm-container.crm-container.crm-public div.crm-section div.content label {
 
 .crm-container tr {
   background: none transparent;
-  display: block;
-  margin-bottom: 10px;
 }
 
 #crm-container.crm-public .label {
@@ -138,7 +128,7 @@ div#crm-container.crm-container.crm-public div.crm-section div.content label {
     float: left;
     width: 50px;
     height: 30px;
-    background: url(i/creditcard-icons.png) no-repeat 0 0 transparent;
+    background: url(../i/creditcard-icons.png) no-repeat 0 0 transparent;
     text-indent: -20000px;
     margin-right: 10px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
@@ -333,7 +323,7 @@ input.crm-form-entityref {
 .crm-container .replace-plain a:active .icon.edit-icon,
 .crm-container .replace-plain:focus .icon.edit-icon,
 .crm-container .replace-plain:hover .icon.edit-icon {
-  background-image: url(i/icons/jquery-ui-2786C2.png);
+  background-image: url(../i/icons/jquery-ui-2786C2.png);
 }
 
 /*
@@ -483,7 +473,7 @@ input.crm-form-entityref {
 .crm-container div.form-item {
   border-top-style: none;
   margin: 0px;
-  padding: 10px 0;
+  padding: 3px 0px 5px 0px;
   clear: none;
   height: 100%;
 }
@@ -808,10 +798,6 @@ input.crm-form-entityref {
   font-size: 0.8em;
 }
 
-.crm-container form#Main div.crm-block div.crm-section.contribution_footer_text-section p {
-  margin: 20px 0;
-}
-
 #civicrm-footer {
   margin-top: 2em;
   border-top: 1px solid #ddd;
@@ -834,7 +820,7 @@ input.crm-form-entityref {
 }
 
 .crm-container div.empowered-by-logo {
-  background: url('i/civi99.png') no-repeat;
+  background: url('../i/civi99.png') no-repeat;
   display: block;
   line-height: 34px;
   position: absolute;
@@ -934,17 +920,17 @@ input.crm-form-entityref {
 }
 
 .crm-container .crm-form-block .crm-loading-element {
-  background-image: url(i/loading-E6E6DC.gif);
+  background-image: url(../i/loading-E6E6DC.gif);
 }
 
 .crm-container .crm-loading-element {
   padding-left: 30px;
   height: 30px;
-  background: transparent url(i/loading.gif) no-repeat 0px 0px;
+  background: transparent url(../i/loading.gif) no-repeat 0px 0px;
 }
 
 .crm-container div div.crm-msg-loading div.icon {
-  background: transparent url(i/loading-2f2f2e.gif) no-repeat 0px 0px;
+  background: transparent url(../i/loading-2f2f2e.gif) no-repeat 0px 0px;
 }
 
 /*
@@ -1539,11 +1525,11 @@ editor specific classes
 }
 
 #crm-container div.remaining {
-  background: url(i/contribute/pcp_remain.gif);
+  background: url(../i/contribute/pcp_remain.gif);
 }
 
 #crm-container div.achieved {
-  background: url(i/contribute/pcp_achieve.gif);
+  background: url(../i/contribute/pcp_achieve.gif);
 }
 
 #crm-container .honor_roll {
@@ -1563,14 +1549,14 @@ editor specific classes
 }
 
 #crm-container .thermometer-fill-wrapper {
-  background: transparent url(i/contribute/pcp_remain.gif) repeat-y scroll left bottom;
+  background: transparent url(../i/contribute/pcp_remain.gif) repeat-y scroll left bottom;
   height: 220px;
   position: relative;
   margin: 1em 0 1.5em 0;
 }
 
 #crm-container .thermometer-fill {
-  background: transparent url(i/contribute/pcp_achieve.gif) repeat-y scroll 0 bottom;
+  background: transparent url(../i/contribute/pcp_achieve.gif) repeat-y scroll 0 bottom;
   bottom: 0;
   left: 0;
   position: absolute;
@@ -1600,7 +1586,7 @@ editor specific classes
 }
 
 #crm-container .ui-draggable {
-  background: url(i/draggable.png) no-repeat left 1px;
+  background: url(../i/draggable.png) no-repeat left 1px;
   float: left;
   height: 16px;
   text-indent: -10000px;
@@ -1846,7 +1832,7 @@ editor specific classes
 }
 .crm-container .crm-hover-button:hover .icon,
 .crm-container .crm-hover-button:active .icon {
-  background-image: url(i/icons/jquery-ui-2786C2.png);
+  background-image: url(../i/icons/jquery-ui-2786C2.png);
 }
 .crm-container a.action-item {
   display: inline;
@@ -1871,7 +1857,7 @@ editor specific classes
   z-index: 9999;
   position: absolute;
   border-bottom: 0px;
-  background: transparent url(i/dropdown-pointer.gif) no-repeat scroll 150px 1px;
+  background: transparent url(../i/dropdown-pointer.gif) no-repeat scroll 150px 1px;
   text-align: left;
   padding-top: 5px;
   margin: 0px;
@@ -1907,7 +1893,7 @@ editor specific classes
   right: 2px;
   top: 3px;
   width: 15px;
-  background: url(i/TreePlus.gif) no-repeat right 1px;
+  background: url(../i/TreePlus.gif) no-repeat right 1px;
 }
 
 
@@ -1940,7 +1926,7 @@ editor specific classes
 
 /* class for text area resizer jquery plugin*/
 div.grippie {
-  background: #EEEEEE url(i/grippie.png) no-repeat scroll center 2px;
+  background: #EEEEEE url(../i/grippie.png) no-repeat scroll center 2px;
   border-color: #DDDDDD;
   border-style: solid;
   border-width: 0pt 1px 1px;
@@ -2394,6 +2380,16 @@ div.grippie {
 
 /* crm button style */
 
+.crm-container .crm-submit-buttons,
+.crm-container .action-link {
+  height: 27px;
+  margin: 4px 0px 4px 2px;
+}
+
+.crm-container #crm-submit-buttons.crm-submit-buttons {
+  margin-top: 20px;
+}
+
 .crm-container .register_link-top {
   float: right;
   margin-left: 8px;
@@ -2456,7 +2452,7 @@ div.grippie {
 }
 
 .crm-container .button .red {
-  background-image: url(i/icons/jquery-ui-FFFFFF.png);
+  background-image: url(../i/icons/jquery-ui-FFFFFF.png);
 }
 
 .crm-container a.button:active {
@@ -2485,7 +2481,7 @@ div.grippie {
 }
 .crm-container .ui-dialog-buttonset .ui-button .ui-icon,
 #crm-contact-actions-list .icon {
-  background-image: url(i/icons/jquery-ui-FFFFFF.png);
+  background-image: url(../i/icons/jquery-ui-FFFFFF.png);
 }
 
 /* No button styling for PayPal Express buttons */
@@ -2597,12 +2593,12 @@ div.grippie {
 }
 
 .crm-container .ui-icon {
-  background-image: url(i/icons/jquery-ui-52534D.png)
+  background-image: url(../i/icons/jquery-ui-52534D.png)
 }
 .crm-container .icon {
   height: 16px;
   width: 16px;
-  background-image: url(i/icons/jquery-ui-52534D.png);
+  background-image: url(../i/icons/jquery-ui-52534D.png);
   float: left;
   text-indent: -10000px;
 }
@@ -2618,11 +2614,11 @@ div.grippie {
 .crm-accordion-header .icon {
   position: relative;
   top: -2px;
-  background-image: url(i/icons/jquery-ui-FFFFFF.png);
+  background-image: url(../i/icons/jquery-ui-FFFFFF.png);
 }
 .crm-container .button:hover .icon,
 .crm-container .crm-button:hover .icon {
-  background-image: url(i/icons/jquery-ui-2786C2.png);
+  background-image: url(../i/icons/jquery-ui-2786C2.png);
 }
 
 .crm-container .crm-button .icon {
@@ -2656,15 +2652,15 @@ div.grippie {
 .crm-container .red-icon,
 .crm-container a:hover .icon.delete-icon,
 .crm-container span:hover .icon.delete-icon {
-  background-image: url(i/icons/jquery-ui-8A1F11.png);
+  background-image: url(../i/icons/jquery-ui-8A1F11.png);
 }
 
 .crm-container .restore-icon {
   background-position: 0px -66px;
-  background-image: url(i/icons/jquery-ui-91CE00.png);
+  background-image: url(../i/icons/jquery-ui-91CE00.png);
 }
 .crm-container .button:hover .restore-icon {
-  background-image: url(i/icons/jquery-ui-91CE00.png);
+  background-image: url(../i/icons/jquery-ui-91CE00.png);
 }
 
 .crm-container .vcard-icon {
@@ -2736,14 +2732,14 @@ div.grippie {
 
 #crm-container .geotag {
   padding: 2px 0 2px 20px !important;
-  background: url(i/geotag_16.png) left center no-repeat;
+  background: url(../i/geotag_16.png) left center no-repeat;
   font-size: .9em;
 }
 
 /* These .crm-icon classes use item_sprites.png */
 
 .crm-container .crm-icon {
-  background-image: url(i/item_sprites.png);
+  background-image: url(../i/item_sprites.png);
   margin: 2px 4px 0 0;
   text-indent: -10000px;
   /* for accessibility reason, put the name of the type/subtype in the icon div (it will be hidden and replaced by the icon) */
@@ -2808,7 +2804,7 @@ div.grippie {
 /* accordion styles */
 
 .crm-container .crm-accordion-header {
-  background-image: url(i/TreeMinusWhite.gif);
+  background-image: url(../i/TreeMinusWhite.gif);
   background-repeat: no-repeat;
   background-position: 2px center;
   cursor: pointer;
@@ -2823,7 +2819,7 @@ div.grippie {
 }
 
 .crm-container .collapsed .crm-accordion-header {
-  background-image: url(i/TreePlusWhite.gif);
+  background-image: url(../i/TreePlusWhite.gif);
 }
 
 .crm-container .collapsed .crm-accordion-body,
@@ -2834,7 +2830,7 @@ div.grippie {
 .crm-container .crm-accordion-inner .crm-accordion-header,
 .crm-container .crm-accordion-wrapper .crm-master-accordion-header,
 .crm-container .crm-collapsible .collapsible-title {
-  background-image: url(i/TreeMinus.gif);
+  background-image: url(../i/TreeMinus.gif);
   background-color: transparent;
   color: #3E3E3E;
 }
@@ -2842,7 +2838,7 @@ div.grippie {
 .crm-container .crm-accordion-inner.collapsed .crm-accordion-header,
 .crm-container .crm-accordion-wrapper.collapsed .crm-master-accordion-header,
 .crm-container .crm-collapsible.collapsed .collapsible-title {
-  background-image: url(i/TreePlus.gif);
+  background-image: url(../i/TreePlus.gif);
 }
 
 .crm-container .crm-accordion-wrapper .crm-master-accordion-header {
@@ -2912,16 +2908,6 @@ div.grippie {
   color: #0200A0;
 }
 
-/* this fixes the checkboxes css issue */
-.crm-accordion-body input.form-checkbox {
-  float: left;
-  clear: both;
-}
-
-.crm-accordion-body label {
-  float: left;
-}
-
 /* civicrm admin menu */
 #civicrm-menu .ui-autocomplete-input,
 .crm-container .ui-autocomplete-input {
@@ -2985,7 +2971,7 @@ div.grippie {
 .crm-container a.helpicon,
 .crm-container .crm-master-accordion-header a.helpicon {
   background-color: #6177D5;
-  background-image: url(i/icons/jquery-ui-F5F6F1.png);
+  background-image: url(../i/icons/jquery-ui-F5F6F1.png);
   background-position: -50px -146px;
   border-radius: 6px;
   display: inline-block;
@@ -2999,7 +2985,7 @@ div.grippie {
 
 div.crm-accordion-header a.helpicon {
   background-color: #F5F6F1;
-  background-image: url(i/icons/jquery-ui-2786C2.png);
+  background-image: url(../i/icons/jquery-ui-2786C2.png);
 }
 
 div a.helpicon:hover,
@@ -3019,7 +3005,7 @@ div a.helpicon:focus {
   overflow: hidden;
   z-index: 1000;
   padding-bottom: 10px;
-  background: transparent url(i/overlay-pointer.png) no-repeat bottom left;
+  background: transparent url(../i/overlay-pointer.png) no-repeat bottom left;
   font-size: 13px;
   display: none;
 }
@@ -3027,7 +3013,7 @@ div a.helpicon:focus {
 .crm-container .crm-tooltip-down .crm-tooltip-wrapper {
   top: 20px;
   padding-top: 10px;
-  background: transparent url(i/overlay-pointer.png) no-repeat top left;
+  background: transparent url(../i/overlay-pointer.png) no-repeat top left;
   overflow: visible;
 }
 
@@ -3114,7 +3100,7 @@ div a.helpicon:focus {
 /* privacy icons */
 #crm-container div span.privacy-flag {
   background-repeat: no-repeat;
-  background-image: url(i/stop-icon.png);
+  background-image: url(../i/stop-icon.png);
   float: right;
 }
 
@@ -3340,7 +3326,7 @@ div a.helpicon:focus {
 
 /* Date plugin */
 .crm-container input.dateplugin {
-  background: white url(i/cal.gif) no-repeat scroll right center;
+  background: white url(../i/cal.gif) no-repeat scroll right center;
   padding-right: 16px;
   /* so that text doesn't flow on top of icon */
   width: 9em;
@@ -3504,11 +3490,6 @@ tbody.scrollContent tr.alternateRow {
   background-color: #f4f4ed;
 }
 
-.crm-accordion-body td.label {
-  position: relative;
-  top: -6px;
-}
-
 .crm-container div.contact_panel td.label,
 .crm-container #customFields div.contact_panel td.label,
 .crm-container table.crm-info-panel td.label {
@@ -3601,7 +3582,7 @@ div.m ul#civicrm-menu,
 /* deprecated autocomplete styles */
 
 .ac_results {
-  background: transparent url(i/dropdown-pointer.gif) no-repeat 25px 1px;
+  background: transparent url(../i/dropdown-pointer.gif) no-repeat 25px 1px;
   padding-top: 5px;
   border: none;
   text-align: left;
@@ -3639,11 +3620,11 @@ div.m ul#civicrm-menu,
 .crm-container .ac_results li .icon,
 .crm-container .ac_results li a .icon,
 .crm-container .ac_results li a:visited .icon {
-  background-image: url(i/icons/jquery-ui-FFFFFF.png);
+  background-image: url(../i/icons/jquery-ui-FFFFFF.png);
 }
 
 .crm-container .ac_results li a:hover .icon {
-  background-image: url(i/icons/jquery-ui-3E3E3E.png);
+  background-image: url(../i/icons/jquery-ui-3E3E3E.png);
 }
 
 .ac_results li:hover,
@@ -3660,7 +3641,7 @@ div.m ul#civicrm-menu,
 
 #civicrm-menu .ui-autocomplete-loading,
 .crm-container .ui-autocomplete-loading {
-  background: white url(i/loading.gif) no-repeat right center;
+  background: white url(../i/loading.gif) no-repeat right center;
 }
 
 /* select2 */
@@ -3686,7 +3667,7 @@ div.m ul#civicrm-menu,
 }
 .crm-container .select2-container-multi.loading .select2-choices:before,
 .crm-container .select2-container.loading .select2-choice .select2-arrow b {
-  background: url(i/loading.gif) no-repeat center center;
+  background: url(../i/loading.gif) no-repeat center center;
 }
 /* Reduce select2 size to match other inputs */
 .crm-container .select2-container-multi .select2-choices {
@@ -3765,7 +3746,7 @@ div.m ul#civicrm-menu,
   color: #2786C2;
 }
 .crm-container .crm-action-menu .select2-default span.select2-chosen:before {
-  background: url(i/icons/jquery-ui-2786C2.png) no-repeat scroll -64px -112px;
+  background: url(../i/icons/jquery-ui-2786C2.png) no-repeat scroll -64px -112px;
   content: "";
   display: inline-block;
   height: 16px;
@@ -3801,17 +3782,17 @@ div.m ul#civicrm-menu,
   content: " ";
   width: 16px;
   height: 16px;
-  background: url(i/icons/jquery-ui-52534D.png) no-repeat -80px -224px;
+  background: url(../i/icons/jquery-ui-52534D.png) no-repeat -80px -224px;
   position: absolute;
   bottom: 0;
   right: 0;
 }
 .crm-container .ui-dialog-titlebar.ui-widget-header {
-  background: url(i/crm-button-bg.gif) repeat-x scroll left center #70716B;
+  background: url(../i/crm-button-bg.gif) repeat-x scroll left center #70716B;
   color: #F5F6F1;
 }
 .crm-container .ui-dialog-title {
-  background: url(i/logo16px.png) no-repeat scroll 0 center;
+  background: url(../i/logo16px.png) no-repeat scroll 0 center;
   margin-left: -5px;
   padding-left: 25px;
 }
@@ -3821,13 +3802,13 @@ div.m ul#civicrm-menu,
   border: 1px none;
 }
 .crm-container .ui-dialog-titlebar .ui-button .ui-icon {
-  background-image: url(i/icons/jquery-ui-F5F6F1.png);
+  background-image: url(../i/icons/jquery-ui-F5F6F1.png);
 }
 .crm-container .ui-dialog-titlebar .ui-button:hover {
   background-color: #cdcdcd;
 }
 .crm-container .ui-dialog-titlebar .ui-button:hover .ui-icon {
-  background-image: url(i/icons/jquery-ui-3E3E3E.gif);
+  background-image: url(../i/icons/jquery-ui-3E3E3E.gif);
 }
 
 /*Needed for jstree contextmenu */
@@ -3918,7 +3899,7 @@ div.m ul#civicrm-menu,
   margin: 2px 2px 3px 2px;
   cursor: pointer;
   background-position: -66px -114px;
-  background-image: url(i/icons/jquery-ui-3E3E3E.gif);
+  background-image: url(../i/icons/jquery-ui-3E3E3E.gif);
 }
 
 .crm-container span.batch-valid {
@@ -4057,7 +4038,7 @@ div.m ul#civicrm-menu,
 }
 
 .crm-container .crm-editable-placeholder {
-  background: url(i/icons/jquery-ui-2786C2.png) -66px -114px no-repeat;
+  background: url(../i/icons/jquery-ui-2786C2.png) -66px -114px no-repeat;
   text-indent: -10000px;
   display: block;
   width: 12px;
@@ -4121,14 +4102,14 @@ div.m ul#civicrm-menu,
 
 #crm-container span.collapsed,
 #crm-container a.collapsed {
-  background: url(i/TreePlus.gif) no-repeat 0 0;
+  background: url(../i/TreePlus.gif) no-repeat 0 0;
   padding-left: 19px;
   cursor: pointer;
 }
 
 #crm-container span.expanded,
 #crm-container a.expanded {
-  background: url(i/TreeMinus.gif) no-repeat 0 0;
+  background: url(../i/TreeMinus.gif) no-repeat 0 0;
   padding-left: 19px;
   cursor: pointer;
 }
@@ -4225,7 +4206,7 @@ div.m ul#civicrm-menu,
 
 .crm-container div.ui-notify-message div.icon,
 .crm-status-icon {
-  background: transparent url(i/message-icons.png) no-repeat 0 0;
+  background: transparent url(../i/message-icons.png) no-repeat 0 0;
   width: 24px;
   height: 24px;
   margin-right: 6px;
@@ -4430,7 +4411,7 @@ span.crm-status-icon {
   float: left;
   width: 50px;
   height: 30px;
-  background: url(i/creditcard-icons.png) no-repeat 0 0 transparent;
+  background: url(../i/creditcard-icons.png) no-repeat 0 0 transparent;
   text-indent: -20000px;
   margin-right: 10px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
@@ -4466,7 +4447,7 @@ span.crm-status-icon {
   display: inline-block;
   width: 50px;
   height: 30px;
-  background: url(i/creditcard-icons.png) no-repeat 0 0 transparent;
+  background: url(../i/creditcard-icons.png) no-repeat 0 0 transparent;
 }
 
 /* Avoid weird border around the images (some themes will add a border around images) */
@@ -4479,7 +4460,7 @@ span.crm-status-icon {
 }
 
 .crm-container .paper-icon {
-  background-position: -101px -222px;background-image: url(i/icons/jquery-ui-3E3E3E.gif);
+  background-position: -101px -222px;background-image: url(../i/icons/jquery-ui-3E3E3E.gif);
 }
 
 .crm-container .strikethrough {
@@ -4502,5 +4483,5 @@ span.crm-status-icon {
 
 /* block-ui */
 .crm-container .blockUI.blockOverlay {
-  background: url(i/loading-overlay.gif) center center no-repeat white !important;
+  background: url(../i/loading-overlay.gif) center center no-repeat white !important;
 }

@@ -128,6 +128,17 @@ function tc_event_dates() {
 // Footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
 
+// CiviCSS
+function tc_civicrm_theme_css( ) {
+    $tc_css = get_bloginfo( 'stylesheet_directory' ) .'/includes/civicrm.css';
+
+    return $tc_css;
+
+}
+
+add_filter( 'tc_civicss_override', 'tc_civicrm_theme_css' );
+
+// Prevent automatic theme updates
 function tc_hidden_theme_2015( $r, $url ) {
     if ( 0 !== strpos( $url, 'http://api.wordpress.org/themes/update-check' ) )
         return $r; // Not a theme update request. Bail immediately.
