@@ -798,14 +798,16 @@ img.alignright,
 --------------------------------------------- */
 
 body.home .content .entry {
+	border-bottom: none;
 	margin-bottom: 0;
+	padding: 0;
 }
 
 body.home article.entry {
 	margin-left: 40px;
 }
 
-body.home article.entry header.entry-header h1.entry-title a {
+body.home aside.featured-content article.entry header.entry-header h2.entry-title a {
 	font-size: 16px;
 	font-weight: 700;
 }
