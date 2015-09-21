@@ -115,6 +115,10 @@ function tc_event_date() {
 		echo eo_get_the_start( 'j F' );
 		echo ' - ';
 		echo eo_get_the_end( 'j F' );
+		echo '<br />';
+		echo eo_get_the_start( 'g:i a' );
+		echo ' - ';
+		echo eo_get_the_end( 'g:i a' );
 	}
 }
 
