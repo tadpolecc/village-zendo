@@ -112,9 +112,16 @@ function tc_cpt_remove_post_info_genesis() {
 // Show event dates directly under all event titles
 function tc_event_date() {
 	if ( function_exists( 'eo_get_the_start' ) ) {
-		echo eo_get_the_start( 'j F' );
-		echo ' - ';
-		echo eo_get_the_end( 'j F' );
+		$start = eo_get_the_start( 'j F Y' );
+		$end = eo_get_the_end( 'j F Y' );
+		if ( $start == $end ) {
+			echo eo_get_the_start( 'j F' );
+		}
+		else {
+			echo eo_get_the_start( 'j F' );
+			echo ' - ';
+			echo eo_get_the_end( 'j F' );
+		}
 		echo '<br />';
 		echo eo_get_the_start( 'g:i a' );
 		echo ' - ';
