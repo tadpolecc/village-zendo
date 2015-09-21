@@ -17,9 +17,13 @@ wp-config.php
 /themes/twentyfifteen/
 /themes/twentyfourteen/
 /themes/twentythirteen/
+/themes/genesis/
 /readme.html
 /license.txt
 index.php
+civicrm-custom/
+images/
+pdfs/
 plugins/
 .idea
 *~
