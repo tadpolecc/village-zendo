@@ -114,7 +114,15 @@ function tc_event_date() {
 	if ( function_exists( 'eo_get_the_start' ) ) {
 		$start = eo_get_the_start( 'j F Y' );
 		$end = eo_get_the_end( 'j F Y' );
-		if ( $start == $end ) {
+		$occurrences = eo_get_the_occurrences_of( $post_id );
+		if ( count( $occurrences ) > 1 ) {
+			foreach( $occurrences as $occurrence) {
+				$date = eo_format_datetime( $occurrence['start'] , 'j F' );
+				echo '<li>' . $date . '</li>';
+			}
+			echo '</ul>';
+		}
+		elseif ( $start == $end ) {
 			echo eo_get_the_start( 'j F' );
 		}
 		else {
@@ -126,6 +134,7 @@ function tc_event_date() {
 		echo eo_get_the_start( 'g:i a' );
 		echo ' - ';
 		echo eo_get_the_end( 'g:i a' );
+		echo '<br /><br />';
 	}
 }
 
