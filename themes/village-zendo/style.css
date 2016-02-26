@@ -42,6 +42,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	- Genesis eNews Extended
 	- Jetpack
 	- Soliloquy
+- Overrides
+	- CiviCRM style overrides
 - Site Header
 	- Title Area
 	- Widget Area
@@ -913,6 +915,16 @@ body.home ul.eo-events.eo-events-widget li span.upcoming-title a:hover {
 
 .soliloquy-container.home-page-carousel .soliloquy-controls .soliloquy-next {
 	right: -35px;
+}
+
+/* ## Overrides
+--------------------------------------------- */
+
+/* # CiviCRM style overrides
+--------------------------------------------- */
+
+#price_29 {
+	width: 80%;
 }
 
 /* # Site Header
