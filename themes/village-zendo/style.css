@@ -935,6 +935,10 @@ body.home ul.eo-events.eo-events-widget li span.upcoming-title a:hover {
 	margin: 0 !important;
 }
 
+.crm-container .register_link-top {
+	float: left !important;
+}
+
 /* # Site Header
 ---------------------------------------------------------------------------------------------------- */
 
