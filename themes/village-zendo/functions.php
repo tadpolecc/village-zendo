@@ -117,23 +117,25 @@ function tc_event_date() {
 		$occurrences = eo_get_the_occurrences_of( $post_id );
 		if ( count( $occurrences ) > 1 ) {
 			foreach( $occurrences as $occurrence) {
-				$date = eo_format_datetime( $occurrence['start'] , 'j F' );
+				$date = eo_format_datetime( $occurrence['start'] , 'j F, Y' );
 				echo '<li>' . $date . '</li>';
 			}
 			echo '</ul>';
 		}
 		elseif ( $start == $end ) {
-			echo eo_get_the_start( 'j F' );
+			echo eo_get_the_start( 'j F, Y' );
 		}
 		else {
-			echo eo_get_the_start( 'j F' );
+			echo eo_get_the_start( 'j F, Y' );
 			echo ' - ';
-			echo eo_get_the_end( 'j F' );
+			echo eo_get_the_end( 'j F, Y' );
 		}
-		echo '<br />';
-		echo eo_get_the_start( 'g:i a' );
-		echo ' - ';
-		echo eo_get_the_end( 'g:i a' );
+		if ( ! eo_is_all_day() ) {
+			echo '<br />';
+			echo eo_get_the_start( 'g:i a' );
+			echo ' - ';
+			echo eo_get_the_end( 'g:i a' );
+		}
 		echo '<br /><br />';
 	}
 }
