@@ -61,4 +61,3 @@ $classes = $eo_event_loop_args['class'];
 	</ul>
 
 <?php endif; ?>
-

@@ -48,16 +48,24 @@ remove_action( 'genesis_header', 'genesis_do_header' );
 remove_action( 'genesis_header', 'genesis_header_markup_close', 15 );
 
 // Add our own header inside content-sidebar-wrap
+
 add_action( 'genesis_before_content', 'tc_vz_header' );
-function tc_vz_header() { ?>
-	<div class="vz-header">
-		<a class="logo-img" href="<?php bloginfo('url'); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /></a>
-			<div class="title-area">
-				<h1 class="site-title" itemprop="headline">
-					<?php bloginfo('site_title'); ?>
-				</h1>
-			</div>
-	</div><?php
+
+function tc_vz_header() {
+	//IF IT'S THE HOMEPAGE, CUSTOM HEADER
+	if (is_front_page() == true) {
+		include('wp-content/themes/village-zendo-2018/customHeader.php');
+		#include( get_template_directory() . '/customHeader.php' );
+	} else { ?>
+        <div class="vz-header">
+            <a class="logo-img" href="<?php bloginfo('url'); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /></a>
+                <div class="title-area">
+                    <h1 class="site-title" itemprop="headline">
+                        <?php bloginfo( 'site_title' ); ?>
+                    </h1>
+                </div>
+        </div>
+	<?php }
 }
 
 // Remove the footer from normal location
@@ -78,7 +86,9 @@ add_action( 'genesis_after_content', 'genesis_footer_widget_areas', 4 );
 add_theme_support( 'genesis-responsive-viewport' );
 
 // Unregister primary/secondary navigation menus
-remove_theme_support( 'genesis-menus' );
+// remove_theme_support( 'genesis-menus' );
+// Unregister primary navigation menu
+add_theme_support( 'genesis-menus', array( 'third-menu' => __( 'Front Page Navigation Menu', 'genesis' ) ) );
 
 // Widgets
 unregister_sidebar( 'header-right' );
@@ -117,25 +127,23 @@ function tc_event_date() {
 		$occurrences = eo_get_the_occurrences_of( $post_id );
 		if ( count( $occurrences ) > 1 ) {
 			foreach( $occurrences as $occurrence) {
-				$date = eo_format_datetime( $occurrence['start'] , 'j F, Y' );
+				$date = eo_format_datetime( $occurrence['start'] , 'j F' );
 				echo '<li>' . $date . '</li>';
 			}
 			echo '</ul>';
 		}
 		elseif ( $start == $end ) {
-			echo eo_get_the_start( 'j F, Y' );
+			echo eo_get_the_start( 'j F' );
 		}
 		else {
-			echo eo_get_the_start( 'j F, Y' );
+			echo eo_get_the_start( 'j F' );
 			echo ' - ';
-			echo eo_get_the_end( 'j F, Y' );
+			echo eo_get_the_end( 'j F' );
 		}
-		if ( ! eo_is_all_day() ) {
-			echo '<br />';
-			echo eo_get_the_start( 'g:i a' );
-			echo ' - ';
-			echo eo_get_the_end( 'g:i a' );
-		}
+		echo '<br />';
+		echo eo_get_the_start( 'g:i a' );
+		echo ' - ';
+		echo eo_get_the_end( 'g:i a' );
 		echo '<br /><br />';
 	}
 }
@@ -172,3 +180,17 @@ function tc_hidden_theme_2015( $r, $url ) {
 }
  
 add_filter( 'http_request_args', 'tc_hidden_theme_2015', 5, 2 );
+
+// Setting the site logo doesn't cause Jetpack to set the og:image as expected,
+// so force it: https://jetpack.com/tag/open-graph/
+function fb_home_image( $tags ) {
+    if ( is_home() || is_front_page() ) {
+        // Remove the default blank image added by Jetpack
+        unset( $tags['og:image'] );
+
+        $fb_home_img = 'https://villagezendo.org/wp-content/uploads/2019/02/masthead-sharing.jpg';
+        $tags['og:image'] = esc_url( $fb_home_img );
+    }
+    return $tags;
+}
+//add_filter( 'jetpack_open_graph_tags', 'fb_home_image' );

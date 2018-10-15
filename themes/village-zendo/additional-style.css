@@ -1,0 +1,201 @@
+/*
+Customizer css
+*/
+
+body {
+    background-color: #4b0606;
+      /* Match sidebar usr #773a25*/
+    
+}
+.registerButton {
+    margin: 5px auto; 
+    display: inline-block; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    padding: 10px; 
+    color: #fff; 
+    background: #3487d4;
+}
+.registerButton:hover {
+    background: #ee2f3d;
+    color: #fff;
+}
+
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table { 
+  width: 100% !important; 
+  border-collapse: collapse; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
+
+.page-id-69 td{
+    text-align: center;
+    padding-top: 15px;  
+}
+
+@media only screen and (max-width: 1200px) {
+    .sidebar-content-sidebar .content-sidebar-wrap{
+        width:80%;
+    }
+    .site-inner,
+    .wrap,
+    .site-container {
+        max-width: 100%;
+    }
+
+    .home.sidebar-content-sidebar .content-sidebar-wrap {
+        width: 100%;
+    }
+
+    .home .wrap{
+        display: flex;
+    justify-content: center;
+    }
+        .content-sidebar-wrap header.masthead h1 {
+      width: 420px;
+            margin-top:35px;
+    }
+    .site-container header.masthead p {
+        margin-top:25px;
+        margin-bottom:30px;
+    }
+}
+
+@media only screen and (max-width: 925px){
+        .sidebar-content-sidebar .content-sidebar-wrap{
+        width:100%;
+    }
+    aside#text-3{
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    div.schedule p:hover{
+        background-image:none;
+    }
+        .content-sidebar-wrap header.masthead h1 {
+      width: 420px;
+            margin-top:135px;
+    }
+    .site-container header.masthead p {
+        margin-top:25px;
+        margin-bottom:30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .parent-pageid-91 tr:first-child{
+        background-color:#ddd;
+    }
+    .parent-pageid-91 td div{
+        text-align:left;
+    }
+    
+    .page-id-4 li{
+        font-weight:600;
+    }
+    
+    div.schedule p{
+        display:block;
+    }
+
+    body.home ul.eo-events.eo-events-widget,
+    body.home article.entry {
+        margin-left: 20px;
+    }
+
+    .footer-widgets-1,
+    .footer-widgets-2,
+    .footer-widgets-3 {
+        float: left;
+        width: 100%;
+    }
+
+    .content-sidebar-wrap header.masthead p {
+        color:black;
+        margin:0 10px;
+        width:initial
+    }
+
+    .content-sidebar-wrap header.masthead div{
+        width:initial;
+        margin:20px 10px;
+        display: flex;
+        justify-content:space-around
+    }
+
+    .content-sidebar-wrap header.masthead div a{
+        padding: 5px 10px;
+        background-color:#ee2f3d;
+        border-color:#ee2f3d;
+        margin-right: 0;
+        font-weight:600;
+    }
+
+    .content-sidebar-wrap header.masthead {
+        background:none;
+        height:initial;
+    }
+
+    .content-sidebar-wrap header.masthead h1 {
+        background-image: url(https://staging.villagezendo.org/wp-content/uploads/2015/09/VZLogo-2015d_HomePage.png);
+        background-size: contain;
+        width: 100%;
+        height: initial;
+        padding: 0;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding-bottom: 10%;
+        background-position: -35px 0; 
+    }
+
+    .content-sidebar-wrap header.masthead p {
+        background-color: transparent;
+    }
+
+    div.schedule p {
+        background-image: none;
+        padding: 0;
+        width: initial;
+        height: inherit;
+        margin: 10px 0;
+    }
+
+    div.schedule h2{
+        font-size: 1.5em;
+    }
+    .page-id-69 main.content{
+        padding:10px 20px;
+    }
+
+    .page-id-69 td:nth-child(2) {
+        padding-left:10px;
+        border-top:none;
+    }
+
+    .page-id-69 td:nth-child(2) a {
+        color:initial;
+    }
+
+    .page-id-69 td {
+        border-top: none;
+    }
+}
+
+#mapp0-layout{
+    width:100% !important;
+}

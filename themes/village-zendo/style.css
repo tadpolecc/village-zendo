@@ -1,12 +1,12 @@
 /* 
-Theme Name: Village Zendo
+Theme Name: Village Zendo 2018
 Theme URI: https://tadpole.cc/
 Description: Custom built for Village Zendo.
 Author: Tadpole Collective
 Author URI: https://tadpole.cc/  
 Template: genesis
 Template Version: 2.1.2 
-Version:1.0
+Version:1.1
 License: GPL-2.0+  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 */
@@ -62,8 +62,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 - Media Queries
 	- Retina Display
 	- Max-width: 1200px
-	- Max-width: 960px
+	- Max-width: 925px
 	- Max-width: 800px
+- Print Styles
 */
 
 
@@ -74,7 +75,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 --------------------------------------------- */
 /* normalize.css v3.0.1 | MIT License | git.io/normalize */
 
-html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#333}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#333}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 
 /* ## Box Sizing
 --------------------------------------------- */
@@ -82,7 +83,6 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 *,
 input[type="search"] {
 	-webkit-box-sizing: border-box;
-	-moz-box-sizing:    border-box;
 	box-sizing:         border-box;
 }
 
@@ -150,8 +150,6 @@ textarea:focus,
 .button,
 .gallery img {
 	-webkit-transition: all 0.1s ease-in-out;
-	-moz-transition:    all 0.1s ease-in-out;
-	-ms-transition:     all 0.1s ease-in-out;
 	-o-transition:      all 0.1s ease-in-out;
 	transition:         all 0.1s ease-in-out;
 }
@@ -931,6 +929,10 @@ body.home ul.eo-events.eo-events-widget li span.upcoming-title a:hover {
 	clear: both !important;
 }
 
+.crm-container .crm-section .label {
+	width: 35% !important;
+}
+
 .crm-container .crm-section .content {
 	margin: 0 !important;
 }
@@ -938,6 +940,7 @@ body.home ul.eo-events.eo-events-widget li span.upcoming-title a:hover {
 .crm-container .register_link-top {
 	float: left !important;
 }
+
 
 /* # Site Header
 ---------------------------------------------------------------------------------------------------- */
@@ -1026,8 +1029,6 @@ body.home ul.eo-events.eo-events-widget li span.upcoming-title a:hover {
 	margin: -33px 0 0 0;
 	position: absolute;
 	-webkit-transition: opacity .6s ease-in-out;
-	-moz-transition:    opacity .6s ease-in-out;
-	-ms-transition:     opacity .6s ease-in-out;
 	-o-transition:      opacity .6s ease-in-out;
 	transition:         opacity .6s ease-in-out;
 	width: 300px;
@@ -1392,6 +1393,85 @@ aside.main-cta .widget {
 	margin-bottom: 0;
 }
 
+/* Nav styles start
+-------------------------------------------------------------------------------- */
+
+.genesis-nav-menu{
+    background-color:#fff;
+    width:100%;
+}
+
+.genesis-nav-menu ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+}
+
+.genesis-nav-menu ul ul{
+    margin-left:0;
+}
+
+.genesis-nav-menu li{
+    padding:0 .25em;
+	white-space:nowrap;
+}
+
+body.home .genesis-nav-menu a:hover,
+body.home .genesis-nav-menu .current-menu-item > a,
+body.home .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+	text-decoration: underline;
+}
+
+.genesis-nav-menu li:after{
+    content:"|";
+    margin-left:.5vw;
+}
+
+.genesis-nav-menu li:last-child:after, .genesis-nav-menu .menu-item-has-children .sub-menu li:after{
+    content:"";
+    margin-left:0;
+}
+
+div.nav-primary .genesis-nav-menu a {
+    color: #000;
+    text-decoration: none;
+    font-size:calc(1px + 1.1vw);
+}
+
+.nav-primary .menu-item-has-children .sub-menu{
+    display:none;
+}
+
+.nav-primary .menu-item-has-children:hover .sub-menu{
+    display:block;
+}
+
+.nav-primary .menu-item-has-children .sub-menu{
+    position:absolute;
+    background-color:#fff;
+    padding: 0 1em .5em 1em;
+}
+
+@media (max-width: 925px){
+    .genesis-nav-menu{
+        display:none;
+    }
+}
+
+@media (min-width: 1300px){
+    div.nav-primary .genesis-nav-menu a {
+	    font-size:16px;
+	}
+}
+
+/* Front Page Top Nav end */
+
 
 /* # Media Queries
 ---------------------------------------------------------------------------------------------------- */
@@ -1451,6 +1531,10 @@ aside.main-cta .widget {
 		background-position: center top;
 	}
 
+	.vz-header {
+		width: 85%;
+	}
+
 	.genesis-nav-menu li,
 	.site-header ul.genesis-nav-menu,
 	.site-header .search-form {
@@ -1483,9 +1567,21 @@ aside.main-cta .widget {
 		display: none;
 	}
 
+	main.content {
+		padding: 1em;
+		width: 100%;
+	}
+
 	/*.footer-widgets-1 {
 		margin-right: 0;
 	}*/
+
+	.site-inner,
+	.wrap {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+
 
 }
 
@@ -1495,13 +1591,6 @@ aside.main-cta .widget {
 		background-color: #fff;
 		font-size: 16px;
 	}
-
-	.site-inner,
-	.wrap {
-		padding-left: 2%;
-		padding-right: 2%;
-	}
-
 	.archive-description,
 	.author-box,
 	.comment-respond,
@@ -1550,4 +1639,199 @@ aside.main-cta .widget {
 	.footer-widgets-3 {
 		float: left;
 		width: 100%;
+	}
+
+	.content-sidebar-wrap header.masthead p {
+	    color:black;
+	    margin:0 10px;
+	    width:initial
+	}
+
+	.content-sidebar-wrap header.masthead div{
+	    width:initial;
+	    margin:10px;
+	    display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -ms-flex-pack:distribute;
+	        justify-content:space-around
+	}
+
+	.content-sidebar-wrap header.masthead div a{
+	    padding: 5px;
+	    background-color:#ee2f3d;
+	    border-color:#ee2f3d;
+	    margin-right: 0;
+	}
+
+	.content-sidebar-wrap header.masthead {
+	    background:none;
+	    height:initial;
+	}
+
+	header.masthead p {
+	    background-color: transparent;
+	}
+
+	.content-sidebar-wrap header.masthead h1 {
+	    background-image: url(https://staging.villagezendo.org/wp-content/uploads/2015/09/VZLogo-2015d_HomePage.png);
+        background-size: contain;
+        width: 100%;
+        height: initial;
+        padding: 0;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding-bottom: 10%;
+        background-position-x: -35px; 
+	}
+
+	div.schedule p {
+	    background-image: none;
+	    padding: 0;
+	    width: initial;
+	    height: inherit;
+	    margin: 10px 0;
+	}
+
+	div.schedule h2{
+		font-size: 1.5em;
+	}
+	.page-id-69 main.content{
+		padding:10px 20px;
+	}
+
+	.page-id-69 td:nth-child(2) {
+	    padding-left:10px;
+	    border-top:none;
+	}
+
+	.page-id-69 td:nth-child(2) a {
+		color:initial;
+	}
+
+	.page-id-69 td {
+		border-top: none;
+	}
+}
+
+#mapp0-layout{
+	width:100% !important;
+}
+
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
+
+.page-id-69 td{
+	text-align: center;
+	padding-top: 15px;	
+}
+
+/* 
+Max width before this PARTICULAR table at "teachers" gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+    .page-id-69 table {
+        width:100% !important;
+        height:inherit !important;
+    }
+
+	/* Force table to not be like tables anymore */
+	.page-id-69 table, .page-id-69 thead, .page-id-69 tbody, .page-id-69 th, .page-id-69 td, .page-id-69 tr { 
+		display: block; 
+	}
+	
+	.page-id-69 tr { border: 1px solid #ccc; }
+	
+	.page-id-69 td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+	}
+	.page-id-69 td:first-child{
+	    font-weight:600;
+	}
+
+	.page-id-69 td:first-child { 
+	  border: none; 
+	}
+
+}
+
+/* # Print Styles
+---------------------------------------------------------------------------------------------------- */
+@media print {
+
+	.site-inner, .wrap {
+		background-color: #fff;
+	}
+
+	.title-area {
+		display: block;
+	}
+
+	.header-image .site-description, .header-image .site-title {
+		font-size: 1.2em;
+		text-indent: 0;
+	}
+
+	main.content {
+		padding: 10px 40px 0;
+	}
+
+	/* Specific to the calendar page */
+	.post-6811 header.entry-header {
+		display: none;
+	}
+
+	.vz-header a.logo-img,
+	.sidebar,
+	.footer-widgets,
+	.site-footer {
+		display: none;
+	}
+
+	.content-sidebar-wrap {
+		width: 100%;
+	}
+
+	table.fc-header {
+		margin-bottom: 0;
+	}
+
+	.fc-header-title h2 {
+		font-size: 1.2em;
+		text-align: center;
+	}
+
+	.fc-header-left,
+	.fc-header-center,
+	.fc-header-right {
+		border: none;
+		padding-top: 10px;
+	}
+
+	.fc-content {
+		font-size: 0.8em;
+		line-height: 1.25;
+	}
 	}
