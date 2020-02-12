@@ -12,195 +12,11 @@ This is the custom homepage header.
 *****/
 ?>
 
-<style>
-body {
-	background: #efefef;
-}
-.site-inner, .wrap {
-	background: #fff;
-}
-.content-sidebar-wrap {
-	width: 100%;
-}
-.sidebar-secondary {
-	background: #000;
-	float: none;
-	padding-top: 0;
-	width: auto;
-	display: none;
-}
-.sidebar-secondary section {
-	display: inline-block;
-}
-.sidebar .widget_nav_menu li {
-	position: relative !important;
-	display: inline-block;
-}
-.sidebar .widget_nav_menu .sub-menu {
-	left: 0 !important;
-	top: 68px;
-}
-header.masthead {
-	background: url('/images/masthead-seiki.jpg') no-repeat;
-	background-size: 100%;
-	height: 480px;
-	overflow: auto;
-}
-header.masthead h1 {
-	text-indent: -9000em;
-	background: url('/images/logo.png') center 10px no-repeat;
-	background-size: 100%;
-	width: 520px;
-    height: 52px;
-    margin-top: 85px;
-}
-header.masthead p {
-	color: #fff;
-	background-color: #00000069;
-    width: 510px;
-    text-align: justify;
-    line-height: 24px;
-	margin: 55px 0 60px 55px;
-    font-size: 15px;
-}
-header.masthead h1, header.masthead p, header.masthead div {
-	margin-left: 45px;
-}
-header.masthead a {
-	text-transform: uppercase;
-    text-decoration: none;
-    background: black;
-    color: #fff;
-    border: 1px solid #8a8a8a;
-    -o-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    padding: 11px 26px;
-    font-size: 16px;
-    margin-right: 51px;
-}
-header.masthead a:last-child {
-	background: #ee2f3d;
-	border-color: #ee2f3d;
-}
-header.masthead a:visited {
-	color: #fff;
-}
-header.masthead a:hover {
-	text-decoration: none;
-	color: #fff;
-	background: #ee2f3d;
-	border-color: #ee2f3d;
-}
-header.masthead a:last-child:hover {
-	background: #ff0000;
-}
-.schedule {
-	text-align: center;
-}
-.schedule h2 {
-	text-align: center;
-    margin: 40px 0 20px;
-    font-size: 32px;
-    text-transform: uppercase;
-}
-.schedule hr {
-	border: 1px solid #f00;
-    width: 200px;
-}
-.schedule p {
-	display: inline-block;
-	width: 280px;
-	padding: 110px 40px 0;
-	font-size: 20px;
-	-o-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	margin: 5px 30px;
-	font-size: 19px;
-	height: 245px;
-	background-image: url(https://villagezendo.org/images/scheduleClock.png);
-	background-position: center 30px;
-	background-size: 65px;
-	background-repeat: no-repeat;
-	position: relative;
-}
-.schedule > p {
-	vertical-align: top;
-}
-.schedule > p > em, .schedule > p > strong {
-    white-space: nowrap;
-}
-.schedule p.last span {
-	left: auto;
-	right: 0;
-}
-.schedule p:hover {
-	background-image: url(https://villagezendo.org/images/scheduleClockHover.png);
-	background-color: #ee2d3f;
-	color: #fff;
-}
-.schedule p em, .schedule p strong {
-	display: block;
-}
-.schedule p img {
-	position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 23px;
-	display: none;
-}
-.schedule p img.arrow {
-	display: none;
-    top: 244px;
-    width: 50px;
-    margin-left: -25px;
-    left: 50%;
-}
-.schedule em {
-    font-style: normal;
-}
-.schedule em, .schedule strong {
-	font-size: 15px;
-}
-.schedule span {
-	display: none;
-    position: absolute;
-    padding: 20px;
-    left: 0;
-    top: 273px;
-    text-align: left;
-    z-index: 10;
-    background: #fff;
-    color: #000 !important;
-    width: 660px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 11px rgba(0,0,0,0.4);
-}
-.schedule span em {
-	margin: 5px 0;
-}
-.bigButton {
-	text-decoration: none;
-    background: #ee2d3f;
-    border-radius: 5px;
-    font-size: 20px;
-}
-.center {
-	text-align: center;
-}
-.post-grid .item {
-	width: 30% !important;
-}
-</style>
-
 <header class="masthead">
-   <h1>Village Zendo Zen Center</h1>
-      <p>The Village Zendo is a Zen community in the heart of downtown New York City. Serving as a sanctuary in busy Manhattan, we offer daily meditation, dharma talks, Buddhist services, retreats, workshops and study groups. Participation is open to all.</p>
-      <div>
-  	    <a href="/about-us/" title="About Us">About Us</a>
+	<h1>Village Zendo Zen Center</h1>
+    <p>The Village Zendo is a Zen community in the heart of downtown New York City. Serving as a sanctuary in busy Manhattan, we offer daily meditation, dharma talks, Buddhist services, retreats, workshops and study groups. Participation is open to all.</p>
+    <div>
+    	<a href="/about-us/" title="About Us">About Us</a>
         <a href="/teachers/" title="Teachers">Teachers</a>
         <a href="/calendar/" title="Calendar">Calendar</a>
     </div>
@@ -270,7 +86,7 @@ header.masthead a:last-child:hover {
     	Dharma Talk or Fusatsu
         <em>Thursday Evening</em>
         <strong>Meditation 5:30 - 6:35pm</strong>
-        <strong>Talk or Fusatsu 6:35 - 7:20pm</strong>
+        <strong>Talk or fusatsu 6:35 - 7:20pm</strong>
         <img src="/images/infoIcon.png" alt="Info icon">
         <img src="/images/arrow.png" alt="Arrow icon" class="arrow">
         <span>
@@ -281,7 +97,7 @@ header.masthead a:last-child:hover {
             6:00&mdash;6:05 Slow kinhin<br>
             6:05&mdash;6:30 Meditation<br>
             6:30&mdash;6:35 Slow kinhin<br>
-            6:35&mdash;7:05 Dharma talk or fusatsu<br>
+            6:35&mdash;7:05 Dharma talk or Fusatsu<br>
             7:05&mdash;7:10 Four Vows</em>
         </span>
     </p>
